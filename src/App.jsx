@@ -5,10 +5,11 @@ import NewsBoard from './Components/NewsBoard'
 function App() {
 
   const[categary ,setCategary]=useState("general");
+  const[lang ,setLang]=useState("en")
   return (
     <>
-       <Nav setCategary={setCategary}/>
-       <NewsBoard categary={categary}/>
+       <Nav setCategary={setCategary} setLang={setLang} lang={lang}/>
+       <NewsBoard categary={categary} en={lang}/>
     </>
   )
 }
