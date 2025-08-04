@@ -13,11 +13,14 @@ const NewsBoard = (props) => {
   }, [props.categary,props.en]);
 
   const newarticales = articles.map((news) => {
+  const newarticales = articles.map((news) => {
     return (
       <NewsIteam
         key={news.id}
+        key={news.id}
         title={news.title}
         description={news.description}
+        src={news.image}
         src={news.image}
         url={news.url}
       />
