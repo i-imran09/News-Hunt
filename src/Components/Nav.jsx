@@ -1,5 +1,4 @@
 
-
 const Nav = (props) => {
   const handleSelect = (lang) => {
     props.setLang(lang);  // Change language in App.jsx via props
