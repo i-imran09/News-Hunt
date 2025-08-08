@@ -1,3 +1,59 @@
-#cardallstyle{
-    max-width: 18rem; max-height: 30rem; display: flex; flex-wrap: wrap;
+/* index.css */
+.news-card {
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.news-image {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+/* Navbar Custom Styling */
+.custom-navbar {
+  background: linear-gradient(to right, #232526, #414345);
+  border-bottom: 2px solid #ffc107;
+  z-index: 999;
+}
+
+.navbar-brand span {
+  font-size: 1.4rem;
+  border-radius: 12px;
+}
+
+.nav-categories .nav-link {
+  margin-right: 12px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.nav-categories .nav-link:hover,
+.nav-categories .nav-link:focus {
+  background-color: #ffc107;
+  color: #000 !important;
+  transform: scale(1.05);
+}
+
+.dropdown-menu .dropdown-item.active {
+  background-color: #ffc107;
+  color: #000;
+  font-weight: bold;
 }
